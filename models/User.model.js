@@ -22,11 +22,13 @@ const userSchema = new Schema(
     passwordHash: {
       type: String,
       required: [true, "Password is required."]
-    }
+    },
+    pictureUrl: String
   },
   {
     timestamps: true
   }
+ 
 );
 
 module.exports = model("User", userSchema);
